@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Music Player</title>
+    <script
+      src="https://kit.fontawesome.com/a731b1af9c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand-links">
+        <a href="./index.html" class="nav-brand-link">
+          <div class="nav-brand">
+            <img
+              src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364419/samples/Music%20player%20app/icon5_ynjqxa.jpg"
+              alt="icon"
+            />
+            <p class="brand-name">
+              Beat <br />
+              <span>Studio</span>
+            </p>
+          </div>
+        </a>
+        <ul class="nav-links-container">
+          <li class="nav-link">Favourites</li>
+        </ul>
+      </div>
+      <div class="right-content">
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" class="search-box" placeholder="Search" />
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+        <div class="bell-container">
+          <i id="bell-icon" class="fa-solid fa-bell"></i>
+        </div>
+        <div class="profile"></div>
+      </div>
+      <div class="right-content-mobile">
+        <div class="bell-container">
+          <i id="bell-icon" class="fa-solid fa-bell"></i>
+        </div>
+        <div class="mobile-menu-container">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="nav-menu-mobile">
+          <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" class="search-box" placeholder="Search" />
+            <i class="fa-solid fa-microphone"></i>
+          </div>
+          <div class="profile"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-container">
+      <div class="main-bg-container single-playlist-screen-bg-container">
+        <main>
+          <!-- Hero Section -->
+          <section class="hero-section">
+            <div class="hero-image-container">
+              <img
+                src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364433/samples/Music%20player%20app/top-played1_t8aass.jpg"
+                alt="top played album"
+              />
+            </div>
+            <div class="hero-section-content">
+              <div class="hero-heading-section">
+                <div>
+                  <h1>ColdPlay</h1>
+                  <p>British Brand</p>
+                </div>
+                <p>851 Followers</p>
+              </div>
+              <div class="hero-explanation">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias, expedita. Totam, similique beatae, nisi minima quos
+                  consequuntur quibusdam dolorem eaque recusandae deserunt alias
+                  omnis aspernatur officia. Id recusandae libero sed.
+                </p>
+              </div>
+
+              <div class="hero-details">
+                <div>
+                  <button>Play All</button>
+                  <p>247 Tracks | 128 Albums</p>
+                </div>
+                <h4>Follow</h4>
+              </div>
+            </div>
+          </section>
+
+          <!-- Play List -->
+          <section class="play-list">
+            <div class="queue-item play-list-queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+                <span>4:44</span>
+              </div>
+              <div class="queue-favourite play-list-queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="queue-item play-list-queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+                <span>4:44</span>
+              </div>
+              <div class="queue-favourite play-list-queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="queue-item play-list-queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+                <span>4:44</span>
+              </div>
+              <div class="queue-favourite play-list-queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="queue-item play-list-queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+                <span>4:44</span>
+              </div>
+              <div class="queue-favourite play-list-queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="queue-item play-list-queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+                <span>4:44</span>
+              </div>
+              <div class="queue-favourite play-list-queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="queue-item play-list-queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+                <span>4:44</span>
+              </div>
+              <div class="queue-favourite play-list-queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="queue-item play-list-queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+                <span>4:44</span>
+              </div>
+              <div class="queue-favourite play-list-queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="queue-item play-list-queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+                <span>4:44</span>
+              </div>
+              <div class="queue-favourite play-list-queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="queue-item play-list-queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+                <span>4:44</span>
+              </div>
+              <div class="queue-favourite play-list-queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="queue-item play-list-queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+                <span>4:44</span>
+              </div>
+              <div class="queue-favourite play-list-queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- Aside: Queue -->
+        <aside>
+          <div class="aside-header">
+            <h2>Similar Artists</h2>
+            <p>View All</p>
+          </div>
+          <div class="aside-list-container">
+            <div class="latest-releases-item">
+              <div class="latest-releases-image-name-container">
+                <div
+                  id="latest-releases-song-1"
+                  class="latest-releases-image-container"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364462/samples/Music%20player%20app/top-played3_yh9chi.jpg"
+                    alt="latest released songs"
+                  />
+                  <button class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                  <!-- Player Ribbon-->
+                  <div id="music-playing-ribbon-1" class="music-playing-ribbon">
+                    <div class="ribbon-song-details">
+                      <div class="ribbon-song-details-card">
+                        <img
+                          src="./assets/top-played-3-square.jpg"
+                          alt="song"
+                        />
+                        <div>
+                          <marquee class="ribbon-song-name">
+                            Mirage by Colson Donaldson Angelina Washington
+                          </marquee>
+                          <p class="ribbon-singer">Else</p>
+                        </div>
+                        <div class="ribbon-favourite">
+                          <i class="fa-regular fa-heart"></i>&nbsp;
+                          <i class="fa-solid fa-ban"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ribbon-player-controllers">
+                      <div class="controls1">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i
+                          id="play-pause"
+                          class="fa-regular fa-circle-pause"
+                        ></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-repeat"></i>
+                      </div>
+                      <div class="controls2">
+                        <p>1:39</p>
+                        <input id="duration-bar" type="range" value="20" />
+                        <p>4:44</p>
+                      </div>
+                    </div>
+
+                    <div class="ribbon-system-controllers">
+                      <i class="fa-regular fa-rectangle-list"></i>
+                      <i class="fa-solid fa-computer"></i>
+                      <i class="fa-solid fa-volume-high"></i>
+                      <input id="volume-bar" type="range" value="90" />
+                      <i
+                        class="fa-solid fa-up-right-and-down-left-from-center"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="latest-releases-text-container">
+                  <h4 class="latest-releases-album-name">Onism</h4>
+                  <p class="latest-releases-album-date">Mar 11, 2024</p>
+                </div>
+              </div>
+              <div class="latest-releases-dots-duration">
+                <div>
+                  <button class="three-dots">...</button>
+                  <ul class="options-menu">
+                    <li class="option-item">
+                      <i class="fa-solid fa-play"></i> Play Now
+                    </li>
+                    <li class="option-item">
+                      <i class="fa-solid fa-plus"></i> Add to Queue
+                    </li>
+                    <li class="option-item">
+                      <i class="fa-regular fa-rectangle-list"></i> Add to
+                      Favourites
+                    </li>
+                    <li class="option-item">
+                      <i class="fa-solid fa-circle-info"></i> Get Info
+                    </li>
+                  </ul>
+                </div>
+                <p class="duration">4:44</p>
+              </div>
+            </div>
+            <div class="latest-releases-item">
+              <div class="latest-releases-image-name-container">
+                <div
+                  id="latest-releases-song-1"
+                  class="latest-releases-image-container"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364462/samples/Music%20player%20app/top-played3_yh9chi.jpg"
+                    alt="latest released songs"
+                  />
+                  <button class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                  <!-- Player Ribbon-->
+                  <div id="music-playing-ribbon-1" class="music-playing-ribbon">
+                    <div class="ribbon-song-details">
+                      <div class="ribbon-song-details-card">
+                        <img
+                          src="./assets/top-played-3-square.jpg"
+                          alt="song"
+                        />
+                        <div>
+                          <marquee class="ribbon-song-name">
+                            Mirage by Colson Donaldson Angelina Washington
+                          </marquee>
+                          <p class="ribbon-singer">Else</p>
+                        </div>
+                        <div class="ribbon-favourite">
+                          <i class="fa-regular fa-heart"></i>&nbsp;
+                          <i class="fa-solid fa-ban"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ribbon-player-controllers">
+                      <div class="controls1">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i
+                          id="play-pause"
+                          class="fa-regular fa-circle-pause"
+                        ></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-repeat"></i>
+                      </div>
+                      <div class="controls2">
+                        <p>1:39</p>
+                        <input id="duration-bar" type="range" value="20" />
+                        <p>4:44</p>
+                      </div>
+                    </div>
+
+                    <div class="ribbon-system-controllers">
+                      <i class="fa-regular fa-rectangle-list"></i>
+                      <i class="fa-solid fa-computer"></i>
+                      <i class="fa-solid fa-volume-high"></i>
+                      <input id="volume-bar" type="range" value="90" />
+                      <i
+                        class="fa-solid fa-up-right-and-down-left-from-center"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="latest-releases-text-container">
+                  <h4 class="latest-releases-album-name">Onism</h4>
+                  <p class="latest-releases-album-date">Mar 11, 2024</p>
+                </div>
+              </div>
+              <div class="latest-releases-dots-duration">
+                <div>
+                  <button class="three-dots">...</button>
+                  <ul class="options-menu">
+                    <li class="option-item">
+                      <i class="fa-solid fa-play"></i> Play Now
+                    </li>
+                    <li class="option-item">
+                      <i class="fa-solid fa-plus"></i> Add to Queue
+                    </li>
+                    <li class="option-item">
+                      <i class="fa-regular fa-rectangle-list"></i> Add to
+                      Favourites
+                    </li>
+                    <li class="option-item">
+                      <i class="fa-solid fa-circle-info"></i> Get Info
+                    </li>
+                  </ul>
+                </div>
+                <p class="duration">4:44</p>
+              </div>
+            </div>
+            <div class="latest-releases-item">
+              <div class="latest-releases-image-name-container">
+                <div
+                  id="latest-releases-song-1"
+                  class="latest-releases-image-container"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364462/samples/Music%20player%20app/top-played3_yh9chi.jpg"
+                    alt="latest released songs"
+                  />
+                  <button class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                  <!-- Player Ribbon-->
+                  <div id="music-playing-ribbon-1" class="music-playing-ribbon">
+                    <div class="ribbon-song-details">
+                      <div class="ribbon-song-details-card">
+                        <img
+                          src="./assets/top-played-3-square.jpg"
+                          alt="song"
+                        />
+                        <div>
+                          <marquee class="ribbon-song-name">
+                            Mirage by Colson Donaldson Angelina Washington
+                          </marquee>
+                          <p class="ribbon-singer">Else</p>
+                        </div>
+                        <div class="ribbon-favourite">
+                          <i class="fa-regular fa-heart"></i>&nbsp;
+                          <i class="fa-solid fa-ban"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ribbon-player-controllers">
+                      <div class="controls1">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i
+                          id="play-pause"
+                          class="fa-regular fa-circle-pause"
+                        ></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-repeat"></i>
+                      </div>
+                      <div class="controls2">
+                        <p>1:39</p>
+                        <input id="duration-bar" type="range" value="20" />
+                        <p>4:44</p>
+                      </div>
+                    </div>
+
+                    <div class="ribbon-system-controllers">
+                      <i class="fa-regular fa-rectangle-list"></i>
+                      <i class="fa-solid fa-computer"></i>
+                      <i class="fa-solid fa-volume-high"></i>
+                      <input id="volume-bar" type="range" value="90" />
+                      <i
+                        class="fa-solid fa-up-right-and-down-left-from-center"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="latest-releases-text-container">
+                  <h4 class="latest-releases-album-name">Onism</h4>
+                  <p class="latest-releases-album-date">Mar 11, 2024</p>
+                </div>
+              </div>
+              <div class="latest-releases-dots-duration">
+                <div>
+                  <button class="three-dots">...</button>
+                  <ul class="options-menu">
+                    <li class="option-item">
+                      <i class="fa-solid fa-play"></i> Play Now
+                    </li>
+                    <li class="option-item">
+                      <i class="fa-solid fa-plus"></i> Add to Queue
+                    </li>
+                    <li class="option-item">
+                      <i class="fa-regular fa-rectangle-list"></i> Add to
+                      Favourites
+                    </li>
+                    <li class="option-item">
+                      <i class="fa-solid fa-circle-info"></i> Get Info
+                    </li>
+                  </ul>
+                </div>
+                <p class="duration">4:44</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="aside-header">
+            <h2>Recently Played</h2>
+            <p>View All</p>
+          </div>
+          <div class="queue-container">
+            <div class="queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+              </div>
+              <div class="queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+              </div>
+              <div class="queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+              </div>
+              <div class="queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+              </div>
+              <div class="queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+              </div>
+              <div class="queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+              </div>
+              <div class="queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+              </div>
+              <div class="queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="queue-item">
+              <div class="queue-item-details">
+                <div class="queue-number">01</div>
+                <img
+                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="queue-song-name">Mirage</p>
+                  <p class="queue-singer">Else</p>
+                </div>
+              </div>
+              <div class="queue-favourite">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

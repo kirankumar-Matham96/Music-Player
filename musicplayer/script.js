@@ -8,7 +8,6 @@
 //     document.querySelector("#music-playing-ribbon-2").style.display = "none";
 //     document.querySelector("#music-playing-ribbon-3").style.display = "none";
 //     document.querySelector("#music-playing-ribbon-4").style.display = "none";
-//     console.log("clicked!");
 //   });
 
 // const latestSong2 = document
@@ -18,7 +17,6 @@
 //     document.querySelector("#music-playing-ribbon-2").style.display = "flex";
 //     document.querySelector("#music-playing-ribbon-3").style.display = "none";
 //     document.querySelector("#music-playing-ribbon-4").style.display = "none";
-//     console.log("clicked!");
 //   });
 
 // const latestSong3 = document
@@ -28,7 +26,6 @@
 //     document.querySelector("#music-playing-ribbon-2").style.display = "none";
 //     document.querySelector("#music-playing-ribbon-3").style.display = "flex";
 //     document.querySelector("#music-playing-ribbon-4").style.display = "none";
-//     console.log("clicked!");
 //   });
 
 // const latestSong4 = document
@@ -38,22 +35,35 @@
 //     document.querySelector("#music-playing-ribbon-2").style.display = "none";
 //     document.querySelector("#music-playing-ribbon-3").style.display = "none";
 //     document.querySelector("#music-playing-ribbon-4").style.display = "flex";
-//     console.log("clicked!");
 //   });
 
 // /**
 //  * play or pause the song from the ribbon
 //  */
-// const play1 = document.querySelector(".play");
-// const pause1 = document.querySelector(".pause");
-// play1.style.display = "none";
+// // getting the play and pause elements
+// const play = document.querySelector(".play");
+// const pause = document.querySelector(".pause");
 
-// pause1.addEventListener("click", () => {
-//   play1.style.display = "block";
-//   pause1.style.display = "none";
+// // adding the class to hide the play button initially
+// play.classList.add("display-none");
+
+// // to toggle the play and pause buttons
+// pause.addEventListener("click", () => {
+//   if (!pause.classList.contains("display-none")) {
+//     pause.classList.add("display-none");
+//     play.classList.remove("display-none");
+//   } else {
+//     pause.classList.remove("display-none");
+//     play.classList.add("display-none");
+//   }
 // });
 
-// play1.addEventListener("click", () => {
-//   pause1.style.display = "block";
-//   play1.style.display = "none";
+// play.addEventListener("click", () => {
+//   if (!play.classList.contains("display-none")) {
+//     play.classList.add("display-none");
+//     pause.classList.remove("display-none");
+//   } else {
+//     pause.classList.add("display-none");
+//     play.classList.remove("display-none");
+//   }
 // });

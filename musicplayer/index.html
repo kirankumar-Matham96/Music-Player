@@ -20,18 +20,21 @@
   </head>
 
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-brand-links">
-        <div class="nav-brand">
-          <img
-            src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364419/samples/Music%20player%20app/icon5_ynjqxa.jpg"
-            alt="icon"
-          />
-          <p class="brand-name">
-            Beat <br />
-            <span>Studio</span>
-          </p>
-        </div>
+        <a href="#" class="nav-brand-link">
+          <div class="nav-brand">
+            <img
+              src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364419/samples/Music%20player%20app/icon5_ynjqxa.jpg"
+              alt="icon"
+            />
+            <p class="brand-name">
+              Beat <br />
+              <span>Studio</span>
+            </p>
+          </div>
+        </a>
         <ul class="nav-links-container">
           <li class="nav-link">Favourites</li>
         </ul>
@@ -64,6 +67,7 @@
         </div>
       </div>
     </nav>
+
     <div class="bg-container">
       <div class="main-bg-container">
         <main>
@@ -97,7 +101,7 @@
                       src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364462/samples/Music%20player%20app/top-played3_yh9chi.jpg"
                       alt="latest released songs"
                     />
-                    <button class="play-button">
+                    <button class="latest-releases-play-button play-button">
                       <i class="fa-solid fa-play"></i>
                     </button>
                     <!--  -->
@@ -109,7 +113,7 @@
                       <div class="ribbon-song-details">
                         <div class="ribbon-song-details-card">
                           <img
-                            src="./assets/top-played-3-square.jpg"
+                            src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364462/samples/Music%20player%20app/top-played3_yh9chi.jpg"
                             alt="song"
                           />
                           <div>
@@ -131,7 +135,11 @@
                           <i class="fa-solid fa-backward-step"></i>
                           <i
                             id="play-pause"
-                            class="fa-regular fa-circle-pause"
+                            class="fa-regular fa-circle-pause pause"
+                          ></i>
+                          <i
+                            id="play-pause"
+                            class="fa-regular fa-circle-play play"
                           ></i>
                           <i class="fa-solid fa-forward-step"></i>
                           <i class="fa-solid fa-repeat"></i>
@@ -182,6 +190,7 @@
                   <p class="duration">4:44</p>
                 </div>
               </div>
+
               <div class="latest-releases-item">
                 <div class="latest-releases-image-name-container">
                   <div
@@ -226,7 +235,11 @@
                           <i class="fa-solid fa-backward-step"></i>
                           <i
                             id="play-pause"
-                            class="fa-regular fa-circle-pause"
+                            class="fa-regular fa-circle-pause pause"
+                          ></i>
+                          <i
+                            id="play-pause"
+                            class="fa-regular fa-circle-play play"
                           ></i>
                           <i class="fa-solid fa-forward-step"></i>
                           <i class="fa-solid fa-repeat"></i>
@@ -422,7 +435,11 @@
                           <i class="fa-solid fa-backward-step"></i>
                           <i
                             id="play-pause"
-                            class="fa-regular fa-circle-pause"
+                            class="fa-regular fa-circle-pause pause"
+                          ></i>
+                          <i
+                            id="lay-pause"
+                            class="fa-regular fa-circle-play play"
                           ></i>
                           <i class="fa-solid fa-forward-step"></i>
                           <i class="fa-solid fa-repeat"></i>
@@ -481,57 +498,87 @@
             <h2 class="section-heading">Popular Artists</h2>
             <div class="artists-bg-container">
               <div class="artist-container">
-                <div id="artist-image-1" class="artist-image">
-                  <img
-                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364421/samples/Music%20player%20app/artist1_xv5eg0.jpg"
-                    alt="artist"
-                  />
-                </div>
+                <a href="./playerPage.html">
+                  <div id="artist-image-1" class="artist-image">
+                    <img
+                      src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364421/samples/Music%20player%20app/artist1_xv5eg0.jpg"
+                      alt="artist"
+                    />
+                    <button class="popular-artists-play-button">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                </a>
                 <p class="artist-name">Emberly Cline</p>
               </div>
               <div class="artist-container">
-                <div id="artist-image-2" class="artist-image">
-                  <img
-                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                    alt="artist"
-                  />
-                </div>
+                <a href="./playerPage.html">
+                  <div id="artist-image-2" class="artist-image">
+                    <img
+                      src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                      alt="artist"
+                    />
+                    <button class="popular-artists-play-button">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                </a>
                 <p class="artist-name">Cullen Sanford</p>
               </div>
               <div class="artist-container">
-                <div id="artist-image-3" class="artist-image">
-                  <img
-                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364415/samples/Music%20player%20app/artist3_wfe6lu.jpg"
-                    alt="artist"
-                  />
-                </div>
+                <a href="./playerPage.html">
+                  <div id="artist-image-3" class="artist-image">
+                    <img
+                      src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364415/samples/Music%20player%20app/artist3_wfe6lu.jpg"
+                      alt="artist"
+                    />
+                    <button class="popular-artists-play-button">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                </a>
                 <p class="artist-name">Ed Sheeran</p>
               </div>
               <div class="artist-container">
-                <div id="artist-image-4" class="artist-image">
-                  <img
-                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364415/samples/Music%20player%20app/artist4_od5xcg.jpg"
-                    alt="artist"
-                  />
-                </div>
+                <a href="./playerPage.html">
+                  <div id="artist-image-4" class="artist-image">
+                    <img
+                      src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364415/samples/Music%20player%20app/artist4_od5xcg.jpg"
+                      alt="artist"
+                    />
+                    <button class="popular-artists-play-button">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                </a>
                 <p class="artist-name">Briar Skinner</p>
               </div>
               <div class="artist-container">
-                <div id="artist-image-5" class="artist-image">
-                  <img
-                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364439/samples/Music%20player%20app/artist5_ikyysk.jpg"
-                    alt="artist"
-                  />
-                </div>
+                <a href="./playerPage.html">
+                  <div id="artist-image-5" class="artist-image">
+                    <img
+                      src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364439/samples/Music%20player%20app/artist5_ikyysk.jpg"
+                      alt="artist"
+                    />
+                    <button class="popular-artists-play-button">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                </a>
                 <p class="artist-name">Noel Gomez</p>
               </div>
               <div class="artist-container">
-                <div id="artist-image-6" class="artist-image">
-                  <img
-                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364430/samples/Music%20player%20app/music-station-pop_smfmce.jpg"
-                    alt="artist"
-                  />
-                </div>
+                <a href="./playerPage.html">
+                  <div id="artist-image-6" class="artist-image">
+                    <img
+                      src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364430/samples/Music%20player%20app/music-station-pop_smfmce.jpg"
+                      alt="artist"
+                    />
+                    <button class="popular-artists-play-button">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                </a>
                 <p class="artist-name">Jake Rosario</p>
               </div>
             </div>
@@ -740,10 +787,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -756,10 +806,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -772,10 +825,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -788,10 +844,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -804,10 +863,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -820,10 +882,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -836,10 +901,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -852,10 +920,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -868,10 +939,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -884,10 +958,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -900,10 +977,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -916,10 +996,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -932,10 +1015,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -948,10 +1034,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -964,10 +1053,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -980,42 +1072,13 @@
             <div class="queue-item">
               <div class="queue-item-details">
                 <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
-                <div>
-                  <p class="queue-song-name">Mirage</p>
-                  <p class="queue-singer">Else</p>
+                <div class="queue-item-details-image-container">
+                  <img
+                    src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
+                    alt=""
+                  />
+                  <i class="fa-regular fa-heart"></i>
                 </div>
-              </div>
-              <div class="queue-favourite">
-                <i class="fa-regular fa-heart"></i>
-              </div>
-            </div>
-            <div class="queue-item">
-              <div class="queue-item-details">
-                <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
-                <div>
-                  <p class="queue-song-name">Mirage</p>
-                  <p class="queue-singer">Else</p>
-                </div>
-              </div>
-              <div class="queue-favourite">
-                <i class="fa-regular fa-heart"></i>
-              </div>
-            </div>
-            <div class="queue-item">
-              <div class="queue-item-details">
-                <div class="queue-number">01</div>
-                <img
-                  src="https://res.cloudinary.com/dhf63ck1r/image/upload/v1711364442/samples/Music%20player%20app/artist2_ezayio.jpg"
-                  alt=""
-                />
                 <div>
                   <p class="queue-song-name">Mirage</p>
                   <p class="queue-singer">Else</p>
@@ -1029,48 +1092,6 @@
         </aside>
       </div>
     </div>
-
-    <!-- Player Ribbon-->
-    <!-- <div class="music-playing-ribbon">
-      <div class="ribbon-song-details">
-        <div class="ribbon-song-details-card">
-          <img src="./assets/top-played-3-square.jpg" alt="song" />
-          <div>
-            <marquee class="ribbon-song-name">
-              Mirage by Colson Donaldson Angelina Washington
-            </marquee>
-            <p class="ribbon-singer">Else</p>
-          </div>
-          <div class="ribbon-favourite">
-            <i class="fa-regular fa-heart"></i>&nbsp;
-            <i class="fa-solid fa-ban"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="ribbon-player-controllers">
-        <div class="controls1">
-          <i class="fa-solid fa-shuffle"></i>
-          <i class="fa-solid fa-backward-step"></i>
-          <i id="play-pause" class="fa-regular fa-circle-pause"></i>
-          <i class="fa-solid fa-forward-step"></i>
-          <i class="fa-solid fa-repeat"></i>
-        </div>
-        <div class="controls2">
-          <p>1:39</p>
-          <input id="duration-bar" type="range" value="20" />
-          <p>4:44</p>
-        </div>
-      </div>
-
-      <div class="ribbon-system-controllers">
-        <i class="fa-regular fa-rectangle-list"></i>
-        <i class="fa-solid fa-computer"></i>
-        <i class="fa-solid fa-volume-high"></i>
-        <input id="volume-bar" type="range" value="90" />
-        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-      </div>
-    </div> -->
   </body>
 
   <script src="script.js"></script>
